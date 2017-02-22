@@ -37,6 +37,7 @@
 		047431621E5D281500D1AADB /* SHProtocolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHProtocolManager.m; sourceTree = "<group>"; };
 		047431661E5D28F100D1AADB /* GoodsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailController.h; sourceTree = "<group>"; };
 		047431671E5D28F100D1AADB /* GoodsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailController.m; sourceTree = "<group>"; };
+		0474316A1E5D2ACD00D1AADB /* GoodsDetailProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsDetailProtocol.h; sourceTree = "<group>"; };
 		0474316B1E5D2C3800D1AADB /* GoodsServiceProvide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsServiceProvide.h; sourceTree = "<group>"; };
 		0474316C1E5D2C3800D1AADB /* GoodsServiceProvide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsServiceProvide.m; sourceTree = "<group>"; };
 		047431701E5D3B4D00D1AADB /* TAGoodsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGoodsDetailController.h; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 		0474315F1E5D281500D1AADB /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				047431691E5D2ABB00D1AADB /* GoodsDetailProtocol */,
 				047431651E5D28D600D1AADB /* GoodsDetailController */,
 				047431601E5D281500D1AADB /* ProtocolManager */,
 			);
@@ -139,6 +141,14 @@
 				0474316C1E5D2C3800D1AADB /* GoodsServiceProvide.m */,
 			);
 			path = GoodsDetailController;
+			sourceTree = "<group>";
+		};
+		047431691E5D2ABB00D1AADB /* GoodsDetailProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				0474316A1E5D2ACD00D1AADB /* GoodsDetailProtocol.h */,
+			);
+			path = GoodsDetailProtocol;
 			sourceTree = "<group>";
 		};
 		0474316E1E5D3B0D00D1AADB /* TAGoodsDetail */ = {
