@@ -7,7 +7,10 @@
 //
 
 #import "TAManager.h"
+#import <UIKit/UIKit.h>
 
 @interface TAManager (GoodsDetailAction)
+
+- (UIViewController *)goodsDetailControllerWithName:(NSString *)goodsName andGoodsId:(NSString *)goodsId complete:(dispatch_block_t)complete;
 
 @end

@@ -25,9 +25,9 @@
     return manager;
 }
 
-- (void)performTarget:(NSString *)targetName action:(NSString *)actionName infors:(NSDictionary *)infoDic cacheTarget:(BOOL)cache{
+- (id)performTarget:(NSString *)targetName action:(NSString *)actionName infors:(NSDictionary *)infoDic cacheTarget:(BOOL)cache{
     
-    NSString *targetClassName = [[NSString alloc] initWithFormat:@"Target_%@",targetName];
+    NSString *targetClassName = [[NSString alloc] initWithFormat:@"%@Target",targetName];
     NSString *actionString = [[NSString alloc] initWithFormat:@"Action_%@",actionName];
     
     id target = self.allCacheTarget[targetName];
@@ -37,18 +37,20 @@
     SEL action = NSSelectorFromString(actionString);
     
     if (target == nil) {
-        return;
-    }
-    
-    if ([target respondsToSelector:action]) {
-        [target performSelector:action withObject:infoDic afterDelay:0.f];
-    }else{
-        NSLog(@" ACTION NOT FOUND");
+        return nil;
     }
     
     if (cache) {
         [self.allCacheTarget setObject:target forKey:targetName];
     }
+    
+    if ([target respondsToSelector:action]) {
+        return [target performSelector:action withObject:infoDic];
+    }else{
+        NSLog(@" ACTION NOT FOUND");
+        return nil;
+    }
+    
 }
 
 - (id)cacheTargetForName:(NSString *)name{

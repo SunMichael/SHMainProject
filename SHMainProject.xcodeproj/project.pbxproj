@@ -19,6 +19,7 @@
 		047431721E5D3B4D00D1AADB /* TAGoodsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431711E5D3B4D00D1AADB /* TAGoodsDetailController.m */; };
 		047431751E5D3BDC00D1AADB /* TAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431741E5D3BDC00D1AADB /* TAManager.m */; };
 		047431831E5D40F900D1AADB /* TAManager+GoodsDetailAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431821E5D40F900D1AADB /* TAManager+GoodsDetailAction.m */; };
+		047431861E5D429C00D1AADB /* GoodsDetailTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431851E5D429C00D1AADB /* GoodsDetailTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		047431741E5D3BDC00D1AADB /* TAManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAManager.m; sourceTree = "<group>"; };
 		047431811E5D40F900D1AADB /* TAManager+GoodsDetailAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TAManager+GoodsDetailAction.h"; sourceTree = "<group>"; };
 		047431821E5D40F900D1AADB /* TAManager+GoodsDetailAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TAManager+GoodsDetailAction.m"; sourceTree = "<group>"; };
+		047431841E5D429C00D1AADB /* GoodsDetailTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailTarget.h; sourceTree = "<group>"; };
+		047431851E5D429C00D1AADB /* GoodsDetailTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailTarget.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 			children = (
 				047431701E5D3B4D00D1AADB /* TAGoodsDetailController.h */,
 				047431711E5D3B4D00D1AADB /* TAGoodsDetailController.m */,
+				047431841E5D429C00D1AADB /* GoodsDetailTarget.h */,
+				047431851E5D429C00D1AADB /* GoodsDetailTarget.m */,
 			);
 			path = TAGoodsDetail;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				047431301E55480600D1AADB /* AppDelegate.m in Sources */,
 				047431831E5D40F900D1AADB /* TAManager+GoodsDetailAction.m in Sources */,
 				047431641E5D281500D1AADB /* SHProtocolManager.m in Sources */,
+				047431861E5D429C00D1AADB /* GoodsDetailTarget.m in Sources */,
 				047431721E5D3B4D00D1AADB /* TAGoodsDetailController.m in Sources */,
 				047431681E5D28F100D1AADB /* GoodsDetailController.m in Sources */,
 				0474316D1E5D2C3800D1AADB /* GoodsServiceProvide.m in Sources */,

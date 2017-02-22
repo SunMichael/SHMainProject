@@ -10,4 +10,8 @@
 
 @interface TAManager : NSObject
 
++ (TAManager *)shareInstance;
+
+- (id)performTarget:(NSString *)targetName action:(NSString *)actionName infors:(NSDictionary *)infoDic cacheTarget:(BOOL)cache;
+
 @end
