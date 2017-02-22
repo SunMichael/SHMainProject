@@ -14,6 +14,7 @@
 
 - (IBAction)checkDetail:(id)sender;
 
+- (IBAction)targetActionDetail:(id)sender;
 @end
 
 @implementation ViewController
@@ -31,8 +32,13 @@
     NSString *goodsId = @"89";
     NSString *goodsName = @"绿茶";
     UIViewController *detailVc = [provide goodsDetailControllerWithGoodsId:goodsId andName:goodsName complete:^{
-        NSLog(@" 查看商品： %@ ， Id：%@ ",goodsName,goodsId);
+        NSLog(@" 购买商品： %@ ， Id：%@ ",goodsName,goodsId);
     }];
     [self.navigationController pushViewController:detailVc animated:YES];
+}
+
+- (IBAction)targetActionDetail:(id)sender {
+    
+    
 }
 @end

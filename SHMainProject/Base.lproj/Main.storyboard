@@ -41,11 +41,22 @@
                                 <rect key="frame" x="102" y="205" width="165" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.44445263619999997" blue="0.49603461560000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="GoodsDetail">
+                                <state key="normal" title="GoodsDetail(P)">
                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="checkDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scR-LH-aGw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkH-G4-m7Z">
+                                <rect key="frame" x="107" y="351" width="165" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.44445263619999997" blue="0.49603461560000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="GoodsDetail(T-A)">
+                                    <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="targetActionDetail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFH-O2-YT1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17" y="121"/>
+            <point key="canvasLocation" x="16.800000000000001" y="120.98950524737631"/>
         </scene>
     </scenes>
 </document>

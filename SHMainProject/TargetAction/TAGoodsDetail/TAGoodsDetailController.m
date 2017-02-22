@@ -1,36 +1,22 @@
 //
-//  GoodsDetailController.m
+//  TAGoodsDetailController.m
 //  SHMainProject
 //
 //  Created by mac on 2017/2/22.
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
-#import "GoodsDetailController.h"
+#import "TAGoodsDetailController.h"
 
-@interface GoodsDetailController ()
+@interface TAGoodsDetailController ()
 
-@property (nonatomic ,strong) UIButton *buyBtn;
-@property (nonatomic, copy) NSString *goodsId;
-@property (nonatomic, copy) NSString *goodsName;
-@property (nonatomic ,copy) dispatch_block_t completeBlock;
 @end
 
-@implementation GoodsDetailController
-
--(instancetype)initWithGoodsId:(NSString *)goodsId andName:(NSString *)name complete:(dispatch_block_t)complete{
-    self = [super init];
-    if (self) {
-        _goodsId = goodsId;
-        _goodsName = name;
-        _completeBlock = [complete copy];
-    }
-    return self;
-}
+@implementation TAGoodsDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+   
     self.navigationItem.title = _goodsName;
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:[self buyButton]];
@@ -38,12 +24,9 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-
+   
 }
 
-- (void)clickedBuyButton{
-    _completeBlock();
-}
 
 - (UIButton *)buyButton{
     if (!_buyBtn) {
@@ -57,5 +40,6 @@
     return _buyBtn;
     
 }
+
 
 @end

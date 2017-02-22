@@ -16,6 +16,9 @@
 		047431641E5D281500D1AADB /* SHProtocolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431621E5D281500D1AADB /* SHProtocolManager.m */; };
 		047431681E5D28F100D1AADB /* GoodsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431671E5D28F100D1AADB /* GoodsDetailController.m */; };
 		0474316D1E5D2C3800D1AADB /* GoodsServiceProvide.m in Sources */ = {isa = PBXBuildFile; fileRef = 0474316C1E5D2C3800D1AADB /* GoodsServiceProvide.m */; };
+		047431721E5D3B4D00D1AADB /* TAGoodsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431711E5D3B4D00D1AADB /* TAGoodsDetailController.m */; };
+		047431751E5D3BDC00D1AADB /* TAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431741E5D3BDC00D1AADB /* TAManager.m */; };
+		047431831E5D40F900D1AADB /* TAManager+GoodsDetailAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 047431821E5D40F900D1AADB /* TAManager+GoodsDetailAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		0474316A1E5D2ACD00D1AADB /* GoodsDetailProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsDetailProtocol.h; sourceTree = "<group>"; };
 		0474316B1E5D2C3800D1AADB /* GoodsServiceProvide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsServiceProvide.h; sourceTree = "<group>"; };
 		0474316C1E5D2C3800D1AADB /* GoodsServiceProvide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsServiceProvide.m; sourceTree = "<group>"; };
+		047431701E5D3B4D00D1AADB /* TAGoodsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGoodsDetailController.h; sourceTree = "<group>"; };
+		047431711E5D3B4D00D1AADB /* TAGoodsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAGoodsDetailController.m; sourceTree = "<group>"; };
+		047431731E5D3BDC00D1AADB /* TAManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAManager.h; sourceTree = "<group>"; };
+		047431741E5D3BDC00D1AADB /* TAManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAManager.m; sourceTree = "<group>"; };
+		047431811E5D40F900D1AADB /* TAManager+GoodsDetailAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TAManager+GoodsDetailAction.h"; sourceTree = "<group>"; };
+		047431821E5D40F900D1AADB /* TAManager+GoodsDetailAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TAManager+GoodsDetailAction.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,9 @@
 		047431631E5D281500D1AADB /* TargetAction */ = {
 			isa = PBXGroup;
 			children = (
+				047431801E5D3CB200D1AADB /* TAGoodsServiceCategory */,
+				0474316E1E5D3B0D00D1AADB /* TAGoodsDetail */,
+				0474316F1E5D3B0D00D1AADB /* TAManager */,
 			);
 			path = TargetAction;
 			sourceTree = "<group>";
@@ -134,6 +146,34 @@
 				0474316A1E5D2ACD00D1AADB /* GoodsDetailProtocol.h */,
 			);
 			path = GoodsDetailProtocol;
+			sourceTree = "<group>";
+		};
+		0474316E1E5D3B0D00D1AADB /* TAGoodsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				047431701E5D3B4D00D1AADB /* TAGoodsDetailController.h */,
+				047431711E5D3B4D00D1AADB /* TAGoodsDetailController.m */,
+			);
+			path = TAGoodsDetail;
+			sourceTree = "<group>";
+		};
+		0474316F1E5D3B0D00D1AADB /* TAManager */ = {
+			isa = PBXGroup;
+			children = (
+				047431731E5D3BDC00D1AADB /* TAManager.h */,
+				047431741E5D3BDC00D1AADB /* TAManager.m */,
+			);
+			path = TAManager;
+			sourceTree = "<group>";
+		};
+		047431801E5D3CB200D1AADB /* TAGoodsServiceCategory */ = {
+			isa = PBXGroup;
+			children = (
+				047431811E5D40F900D1AADB /* TAManager+GoodsDetailAction.h */,
+				047431821E5D40F900D1AADB /* TAManager+GoodsDetailAction.m */,
+			);
+			name = TAGoodsServiceCategory;
+			path = TAGoodsService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,9 +249,12 @@
 			files = (
 				047431331E55480600D1AADB /* ViewController.m in Sources */,
 				047431301E55480600D1AADB /* AppDelegate.m in Sources */,
+				047431831E5D40F900D1AADB /* TAManager+GoodsDetailAction.m in Sources */,
 				047431641E5D281500D1AADB /* SHProtocolManager.m in Sources */,
+				047431721E5D3B4D00D1AADB /* TAGoodsDetailController.m in Sources */,
 				047431681E5D28F100D1AADB /* GoodsDetailController.m in Sources */,
 				0474316D1E5D2C3800D1AADB /* GoodsServiceProvide.m in Sources */,
+				047431751E5D3BDC00D1AADB /* TAManager.m in Sources */,
 				0474312D1E55480600D1AADB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
