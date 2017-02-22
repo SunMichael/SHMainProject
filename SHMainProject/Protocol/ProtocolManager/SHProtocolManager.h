@@ -15,5 +15,5 @@
 
 + (id)serviceProvideForProtocol:(Protocol *)protocol;
 
-+ (SHProtocolManager *)shareInstance;
+
 @end
