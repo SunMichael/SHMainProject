@@ -45,8 +45,14 @@
     }
     
     if ([target respondsToSelector:action]) {
-        id obj = [target performSelector:action withObject:infoDic];
-        return obj;
+        //方法触发的2种写法
+//        id obj = [target performSelector:action withObject:infoDic];
+//        return obj;
+        
+        IMP imp = [target methodForSelector:action];
+        id (*function)(id ,SEL ,id) = (void *) imp;
+        return function(target, action, infoDic);
+        
     }else{
         NSLog(@" ACTION NOT FOUND");
         return nil;
