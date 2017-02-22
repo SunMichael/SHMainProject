@@ -27,6 +27,11 @@
    
 }
 
+- (void)clickedBuyButton{
+    if (_complete) {
+        _complete();
+    }
+}
 
 - (UIButton *)buyButton{
     if (!_buyBtn) {

@@ -13,5 +13,6 @@
 @property (nonatomic ,strong) UIButton *buyBtn;
 @property (nonatomic, copy) NSString *goodsId;
 @property (nonatomic, copy) NSString *goodsName;
+@property(nonatomic ,copy) dispatch_block_t complete;
 
 @end

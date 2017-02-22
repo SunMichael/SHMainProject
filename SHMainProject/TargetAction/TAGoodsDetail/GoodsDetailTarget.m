@@ -13,7 +13,8 @@
 -(UIViewController *)Action_GoodsDetailAction:(NSDictionary *)inforDic{
     TAGoodsDetailController *goodsDetailVc = [[TAGoodsDetailController alloc] init];
     goodsDetailVc.goodsId = inforDic[@"goodsId"];
-
+    goodsDetailVc.goodsName = inforDic[@"goodsName"];
+    goodsDetailVc.complete = inforDic[@"block"];
     return goodsDetailVc;
 }
 

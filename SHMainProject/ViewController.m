@@ -10,6 +10,9 @@
 #import "SHProtocolManager.h"
 #import "GoodsDetailController.h"
 
+#import "TAManager.h"
+#import "TAManager+GoodsDetailAction.h"
+
 @interface ViewController ()
 
 - (IBAction)checkDetail:(id)sender;
@@ -34,11 +37,17 @@
     UIViewController *detailVc = [provide goodsDetailControllerWithGoodsId:goodsId andName:goodsName complete:^{
         NSLog(@" 购买商品： %@ ， Id：%@ ",goodsName,goodsId);
     }];
-    [self.navigationController pushViewController:detailVc animated:YES];
+    
+   [self.navigationController pushViewController:detailVc animated:YES];
 }
 
 - (IBAction)targetActionDetail:(id)sender {
+    NSString *goodsId = @"89";
+    NSString *goodsName = @"绿茶";
+    UIViewController *detailVc = [[TAManager shareInstance] goodsDetailControllerWithName:goodsName andGoodsId:goodsId complete:^{
+        NSLog(@" TA 购买商品： %@ ， Id：%@ ",goodsName,goodsId);
+    }];
     
-    
+    [self.navigationController pushViewController:detailVc animated:YES];
 }
 @end

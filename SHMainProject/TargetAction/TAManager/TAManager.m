@@ -28,7 +28,7 @@
 - (id)performTarget:(NSString *)targetName action:(NSString *)actionName infors:(NSDictionary *)infoDic cacheTarget:(BOOL)cache{
     
     NSString *targetClassName = [[NSString alloc] initWithFormat:@"%@Target",targetName];
-    NSString *actionString = [[NSString alloc] initWithFormat:@"Action_%@",actionName];
+    NSString *actionString = [[NSString alloc] initWithFormat:@"Action_%@:",actionName];
     
     id target = self.allCacheTarget[targetName];
     if (!target) {
@@ -45,7 +45,8 @@
     }
     
     if ([target respondsToSelector:action]) {
-        return [target performSelector:action withObject:infoDic];
+        id obj = [target performSelector:action withObject:infoDic];
+        return obj;
     }else{
         NSLog(@" ACTION NOT FOUND");
         return nil;

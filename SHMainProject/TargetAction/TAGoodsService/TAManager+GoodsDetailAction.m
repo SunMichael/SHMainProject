@@ -12,11 +12,11 @@
 @implementation TAManager (GoodsDetailAction)
 
 -(UIViewController *)goodsDetailControllerWithName:(NSString *)goodsName andGoodsId:(NSString *)goodsId complete:(dispatch_block_t)complete{
-    TAGoodsDetailController *goodsDetailVc = [[TAGoodsDetailController alloc] init];
-    goodsDetailVc.goodsId = goodsId;
-    goodsDetailVc.goodsName = goodsName;
-    
-    return [self performTarget:@"GoodsDetailTarget" action:@"GoodsDetailAction" infors:nil cacheTarget:YES];
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"goodsId"] = goodsId;
+    params[@"goodsName"] = goodsName;
+    params[@"block"] = complete;
+    return [self performTarget:@"GoodsDetail" action:@"GoodsDetailAction" infors:params cacheTarget:YES];
 }
 
 @end
