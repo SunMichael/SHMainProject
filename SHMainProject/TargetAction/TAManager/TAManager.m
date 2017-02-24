@@ -49,10 +49,16 @@
 //        id obj = [target performSelector:action withObject:infoDic];
 //        return obj;
         
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        return [target performSelector:action withObject:infoDic];
+#pragma clang diagnostic pop
+        
+        /*
         IMP imp = [target methodForSelector:action];
         id (*function)(id, SEL, id) = (void *)imp;
         return function(target, action, infoDic);
-        
+        */
     }else{
         NSLog(@" ACTION NOT FOUND");
         return nil;
