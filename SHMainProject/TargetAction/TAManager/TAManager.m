@@ -71,4 +71,11 @@
     return _allCacheTarget;
 }
 
+
+-(void)removeTargetWithName:(NSString *)name{
+    if (_allCacheTarget[[NSString stringWithFormat:@"%@Target",name]]) {
+        [_allCacheTarget removeObjectForKey:name];
+    }
+}
+
 @end
